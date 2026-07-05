@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model with Labels</title>
+    <style>
+        /* 1. MARGIN AREA - OUTERMOST LAYER
+           Purpose: Space outside the border. Separates this box from other elements */
+        .margin-area {
+            background-color: #e0e0e0; /* Gray = Margin area */
+            padding: 10px; /* So you can see the gray margin space */
+        }
+
+        /* 2. THE BOX - SHOWS BORDER, PADDING, CONTENT, HEIGHT, BACKGROUND 
+           Purpose: Demonstrates all parts of the CSS Box Model */
+        .box {
+            width: 250px;               /* CONTENT WIDTH */
+            height: 120px;              /* CONTENT HEIGHT */
+            padding: 20px;              /* PADDING: Space between content and border */
+            border: 6px solid navy;     /* BORDER: Line around padding */
+            margin: 25px;               /* MARGIN: Space outside the border */
+            background-color: lightcyan;/* BACKGROUND-COLOR: Fills content + padding area */
+            font-family: Arial;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STUDENT DETAILS -->
+    <h1>Student Details</h1>
+    <p>Name: Ernest Hikarofem lawrence </p>
+    <p>Registration No:2024/nd/41117/cs</p>
+    <hr>
+
+    <!-- BOX MODEL DEMONSTRATION -->
+    <h2>CSS Box Model</h2>
+    
+    <div class="margin-area">
+        <!-- LABEL: This gray area is the MARGIN -->
+        <p><strong>Margin Area:</strong> 25px of gray space outside the border</p>
+        
+        <div class="box">
+            <!-- LABEL: Everything inside here -->
+            <p><strong>Border:</strong> 6px solid navy line</p>
+            <p><strong>Padding:</strong> 20px of lightcyan space inside border</p>
+            <p><strong>Content:</strong> Text area = 250px width x 120px height</p>
+            <p><strong>Background:</strong> lightcyan covers content + padding</p>
+        </div>
+        
+        <p>Total Box Size = margin + border + padding + content</p>
+    </div>
+
+</body>
+</html>
+
